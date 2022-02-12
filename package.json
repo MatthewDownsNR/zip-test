@@ -1,9 +1,8 @@
 {
   "name": "zip-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing .zip file uploads on the browser",
   "homepage": "https://MatthewDownsNR.github.io/zip-test",
-  "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "prebuild": "rimraf dist",
@@ -11,9 +10,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthewDownsNR/zip-test"
+  },
+  "author": "MatthewDownsNR <matthew@neer.ai>",
+  "license": "MIT",
   "dependencies": {
     "jszip": "^3.7.1",
     "mime-types": "^2.1.34",
