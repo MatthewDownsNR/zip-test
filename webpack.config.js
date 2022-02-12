@@ -6,7 +6,7 @@ module.exports = {
     target: 'web',
     entry: join(__dirname, './src/index.tsx'),
     output: {
-        filename: '[name].[chunkhash].js',
+        filename: '[name].js',
         path: join(__dirname, './dist'),
         publicPath: '/'
     },
