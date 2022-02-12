@@ -22,7 +22,10 @@ module.exports = {
     plugins: [
         new NodePolyfillPlugin(),
         new HtmlPlugin({
-            template: join(__dirname, './src/index.html')
+            template: join(__dirname, './src/index.ejs'),
+            templateParameters: {
+                base: '/zip-test'
+            }
         })
     ],
     resolve: {
